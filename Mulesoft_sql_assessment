@@ -1,0 +1,16 @@
+CREATE TABLE MOVIE (movie_name VARCHAR(25),
+                    actor_name VARCHAR(20),
+                    actress_name VARCHAR(20),
+                    year_of_release INT(4),
+                    director_name VARCHAR(20)
+                    );
+
+INSERT INTO MOVIE VALUES("top gun maverick","tom cruise","jennifer connely",2022,"Joseph kosinski");
+
+INSERT INTO MOVIE VALUES("spider man no way home","tom holland","zendaya",2021,"John Watts");
+
+SELECT * FROM MOVIE;
+
+SELECT movie_name 
+FROM MOVIE
+WHERE actor_name="tom cruise";
